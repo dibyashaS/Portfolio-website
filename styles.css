@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: bisque;
+    color: black;
+}
+
+#header {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('images/Untitled design (3).png'); /* Your background image */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center;
+    background-repeat: no-repeat; /* Don't repeat the image */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps the logo on the left and nav on the right */
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul {
+    display: flex; /* Display the list items horizontally */
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #0f0305;
+}
+
+.intro {
+    text-align: left;
+    color: black;
+    margin-top: 20px; /* Add space above the intro section */
+}
+
+.intro h3 {
+    font-size: 1.5rem;
+    font-family: monospace; 
+}
+
+.header-text p span {
+    color: purple;
+    font-style: bold;
+}
+
+.intro span {
+    color: darkblue;
+}
+
+/* ----------------------------------------about----------------------------------------------- */
+#about {
+    padding: 90px 0;
+    color: black;
+}
+#about .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#about-col-1{
+    flex-basis: 35%;
+}
+.about-image {
+    width: 300px; 
+    height: auto; 
+    display: block; 
+    margin-left: 0;
+    margin-right: auto;
+
+}
+.about-col-2 {
+    flex: 2;
+    text-align: left; 
+    padding: 20px; 
+    line-height: 1.8; 
+}
+
+.subtitle{
+    font-size: 50px;
+    font-weight: 600;
+    color:black;
+}
+
+.tab-titles{
+    display:flex;
+    margin:20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor:pointer;
+    color: rgb(120, 165, 224);
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: beige;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition: 0.5s;
+}
+
+tab-links active-link::after{
+    width: 50%;
+}
+/*----------------------Projects------------------------*/
+#projects{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 70px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width:100%;
+    height:0%;
+    background:linear-gradient(rgba(0,0,0,0.6),rgb(206, 123, 206));
+    border-radius: 10px;
+    position: absolute;
+    left: 0%;
+    bottom:0;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.contact{
+    font-size: small;
+}
+footer {
+    background: linear-gradient(to right, plum, lightblue);; 
+    color: white; 
+    text-align: center;
+}

@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dibyasha's Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -15,7 +16,7 @@
                         <ul>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
+                            <li><a href="#experience">Experience</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -30,49 +31,96 @@
                 </div>
             </div>
         </header>
-
-        <section id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1"></div>
-                    </div>
-                    <div class="about-col-2"></div>
-                <h2>About Me</h2>
-                <p>Hello! I am Dibyasha, a passionate web developer skilled in JavaScript, HTML, CSS, and more. Welcome to my portfolio!</p>
+<!--------------------------about-------------------------------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image1.JPG" class="about-image">
             </div>
-        </section>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me✨</h1>
+                <p>Hello!🥰
+                
+                <p>I am Dibyasha, a sophomore double majoring in Computer Science and Economics. I currently attend Knox College in Galesburg, Illinois.</p> 
 
-        <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project-list">
-                    <div class="project">
-                        <h3>Project 1</h3>
-                        <p>Description of project 1 goes here.</p>
-                    </div>
-                    <div class="project">
-                        <h3>Project 2</h3>
-                        <p>Description of project 2 goes here.</p>
-                    </div>
+                <p>I find the power of Computer Science to solve problems in all domains to be incredibly fascinating and view it as a tool to solve real-world problems.</p>
+
+                <p>I am interested in exploring areas in Software Engineering, Web Development, Networks (due to a recent research project!), and Data Science.Currently seeking internships and learning opportunities to gain experience outside my courses in these fields.</p>
+
+                <p>Always eager and curious to engage with new ideas!</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!------------projects------------>
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Graphs Project.png">
+                <div class="layer">
+                    <h3>Graphs Project</h3>
+                    <p>This project is used to simulate structured random networks with random intergroup and intragroup connections. It then generates the diameter and average shortest path for a various number of runs. The term node and vertex are used interchangeably.</p>
+                    <a href="https://github.com/dibyashaS/High-Performance-through-Isolated-Vertices-Testing" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                        <i class="fa-brands fa-github" style="font-size: 24px;"></i>
+                    </a>                    
                 </div>
             </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out via <a href="mailto:your-email@example.com">email</a>.</p>
+            <div class="work">
+                <img src="Financebot.png">
+                <div class="layer">
+                    <h3>Langchain News Retrieval</h3>
+                    <p>This end-to-end NLP project uses langchain, openai API, and streamlit to build a news research tool that can be used by finance research analysts to extract relevant information from recent news articles on the questions that they need answered.
+                    </p>
+                    <a href="https://github.com/dibyashaS/LangchainNewsRetrieval/tree/main/langchain" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                        <i class="fa-brands fa-github" style="font-size: 24px;"></i>
+                    </a>                    
+                </div>
             </div>
-        </section>
-
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Dibyasha. All rights reserved.</p>
+            <div class="work">
+                <img src="90s portfolio.png">
+                <div class="layer">
+                    <h3>90s-Inspired Portfolio</h3>
+                    <p>This 90s Inspired Website uses HTML, CSS and Javascript and is a unique, nostalgic take on my portfolio. Made for the Codedex winter hackathon.
+                    </p>
+                    <a href="https://github.com/dibyashaS/RetroPortfolio" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                        <i class="fa-brands fa-github" style="font-size: 24px;"></i>
+                    </a>                    
+                </div>
             </div>
-        </footer>
-
-        <script src="script.js"></script>
-    </body>
-</html>
+            <div class="work">
+                <img src="Screenshot (79).png">
+                <div class="layer">
+                    <h3>Ticketr Full-Stack SAaS Application</h3>
+                    <p>An app for users to book tickets to see their favorite artists!
+                    </p>
+                    <a href="https://github.com/dibyashaS/ticketr-project" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                        <i class="fa-brands fa-github" style="font-size: 24px;"></i>
+                    </a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---contact------------>
+<footer>
+    <!-- Footer Content -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h3 class="subtitle">To get in touch,</h3>
+                    <p>Contact me via email: <a href="mailto:dsharma@knox.edu">dsharma@knox.edu</a> or on <a href="https://www.linkedin.com/in/dibyasha-sharma-8083452a0/" target="_blank">LinkedIn</a>. For a full resume, please contact directly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Dibyasha. All rights reserved.</p>
+    </div>
+</footer>
 
 
